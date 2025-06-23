@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: a42d43a194fd81740a5375f72b0296f6
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023BadgeA_Material1
+    second: {fileID: 2100000, guid: ce03607c58ecd6c4182211ebf235ce1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Base_Material1
+    second: {fileID: 2100000, guid: 79225b9981872d44e8aee28287a1f3ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Coloured_Material1
+    second: {fileID: 2100000, guid: 08bc1a63c8aed4d4cb12f168f2d0b7e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023EngineA_Material1
+    second: {fileID: 2100000, guid: 184a451bcead9d645bde6694244ec012, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille1A_Material1
+    second: {fileID: 2100000, guid: 7376d09d90c7ec942bd320de3dbac410, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille2A_Material1
+    second: {fileID: 2100000, guid: b598516c88d2bf640bae1fd6c1a4eb96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille3A_Material1
+    second: {fileID: 2100000, guid: eb46587bb70f09243b025bbacf019954, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille4A_Material1
+    second: {fileID: 2100000, guid: 831eb163cfde69243a9534e1d117b50e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille5A_Material1
+    second: {fileID: 2100000, guid: a24327d0ba60d8a4b9e72f8faeff91c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille6A_Material1
+    second: {fileID: 2100000, guid: 3d841a668c9bc204daeed710309dd9b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Grille7A_Material1
+    second: {fileID: 2100000, guid: c5670a6ebd5e7f24dbf86c680a3cc9c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023InteriorA_Material1
+    second: {fileID: 2100000, guid: 3f40a9925e40a9749a15859be5e86578, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023InteriorTillingA_Material1
+    second: {fileID: 2100000, guid: 2e479d2d2bf57e24db6a34a0a633d3a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023LightA_Material1
+    second: {fileID: 2100000, guid: 4d96711ffe834904c80474b8613a58f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023ManufacturerPlateA__ade8d82
+    second: {fileID: 2100000, guid: fe5a5db77b5cdf7499ee8945a3aca7e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Paint_Material1
+    second: {fileID: 2100000, guid: 0c4355810d8d4524a938181ecf86cd7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023TexturedA_Material1
+    second: {fileID: 2100000, guid: 801562f52f36fc54f843d20d72e34602, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023Window_Material1
+    second: {fileID: 2100000, guid: a083f90a631b4c44a82ab0def766b69d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023_CallipersCalliperA_9815232
+    second: {fileID: 2100000, guid: 997bc411aeb1ee04a98febde12d82c22, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023_CallipersCalliperB_2ab0207
+    second: {fileID: 2100000, guid: 1a4b7ee9b8e99bd4e863ff8b37a488aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: h_Hyundai_Ioniq5NRewardRecycled_2023_Wheel1A_3D_3DWheel_40fe1f9
+    second: {fileID: 2100000, guid: 5fc0900eaa079474ab46b0e1ac47b42f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red_glass
+    second: {fileID: 2100000, guid: aff802a44900fd941940fb75f77386b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red_paint
+    second: {fileID: 2100000, guid: e75adaf63e42e224897c575827ea62dd, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
