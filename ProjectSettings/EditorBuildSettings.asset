@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SetCarScene.unity
     guid: b7551579fa3d15e49b6e222b626e7e3d
   - enabled: 1
-    path: Assets/Scenes/SetOptionScene.unity
-    guid: 41dd5d6bae5196240986970af2f33273
-  - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: d02c0922a1dc9494495dfb84ab71971f
   m_configObjects:
