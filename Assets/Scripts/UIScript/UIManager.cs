@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    GameObject Canvas;
-    GameObject Camera;
+    GameObject UICanvas;
+    GameObject npc;
     // Start is called before the first frame update
     void Start()
     {
-        Canvas = GameObject.Find("Canvas");
-        Camera = GameObject.Find("CenterEyeAnchor");
-        Canvas.transform.position = Camera.transform.position + Camera.transform.forward * 10.0f;
-        Canvas.transform.eulerAngles = Camera.transform.eulerAngles;
-        Canvas.transform.parent = Camera.transform;
-        Canvas.SetActive(false);
+        UICanvas = GameObject.Find("UICanvas");
+        npc = GameObject.Find("NPC");
+        UICanvas.transform.position = npc.transform.position + npc.transform.right * 3.0f;
+        UICanvas.transform.eulerAngles = npc.transform.eulerAngles;
+        UICanvas.transform.parent = npc.transform;
+        UICanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,11 +22,11 @@ public class UIManager : MonoBehaviour
     {
         if(OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
         {
-            Canvas.SetActive(true);
+            UICanvas.SetActive(true);
         }
         if(OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LTouch))
         {
-            Canvas.SetActive(false);
+            UICanvas.SetActive(false);
         }
     }
 }

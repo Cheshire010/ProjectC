@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class RayCastManager_R : MonoBehaviour
 {
+
     LineRenderer myLR;
     GameObject right_hand;
     Ray ray;
     RaycastHit hit;
+    public UnityEvent<string> AA;
+    string AA_string;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +34,11 @@ public class RayCastManager_R : MonoBehaviour
 
         if(Physics.Raycast(ray, out hit,Mathf.Infinity))
         {
-            if(hit.collider.gameObject.CompareTag("Button"))
+            if(hit.collider)
             {
                 myLR.SetPosition(1, hit.point);
-                if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+                AA.Invoke(hit.collider.gameObject.name);
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
                 {
                     Button Button_Component = hit.collider.gameObject.GetComponent<Button>();
                     Button_Component.onClick.Invoke();
@@ -41,6 +47,7 @@ public class RayCastManager_R : MonoBehaviour
         }
         else
         {
+            AA.Invoke(null);
             myLR.SetPosition(1,ray.origin+ray.direction * 10);
         }
     }
