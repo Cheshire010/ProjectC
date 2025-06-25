@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     Vector3 myVec = Vector3.zero;
     float speed = 2.0f;
-    float rotatespeed = 900.0f;
+    float rotatespeed = 90.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,6 @@ public class PlayerMove : MonoBehaviour
         transform.Translate(myVec * speed * Time.deltaTime);
 
         Vector2 turninput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.LTouch);
-        Debug.Log("돌아가용");
         float turnAmount = turninput.x * rotatespeed * Time.deltaTime;
         transform.Rotate(0, turnAmount, 0);
     }

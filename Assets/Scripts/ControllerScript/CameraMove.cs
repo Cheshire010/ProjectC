@@ -16,8 +16,9 @@ public class CameraMove : MonoBehaviour
     void Update()
     {
         myPos = player.transform.position;
-        myPos.y += 1.0f;
+        myPos.y += 0.7f;
         myPos.z += 0.5f;
         transform.position = myPos;
+        transform.rotation = player.transform.rotation;
     }
 }
