@@ -20,13 +20,13 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
-        {
-            UICanvas.SetActive(true);
-        }
-        if(OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LTouch))
-        {
-            UICanvas.SetActive(false);
-        }
+        //if(OVRInput.GetDown(OVRInput.Button.Two, OVRInput.Controller.LTouch))
+        //{
+        //    UICanvas.SetActive(true);
+        //}
+        //if(OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.LTouch))
+        //{
+        //    UICanvas.SetActive(false);
+        //}
     }
 }

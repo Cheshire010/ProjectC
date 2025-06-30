@@ -912,12 +912,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 829805647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd4acca9c0dadd44ba903a09baa69ae5, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d6e23b976065d94aa433dfe8043b9dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Spawnlocation: {fileID: 96149840}
   Cars:
   - {fileID: 919132149155446097, guid: 8865f81413c406c4d971c05a5b66ea20, type: 3}
+  Car: {fileID: 919132149155446097, guid: 8865f81413c406c4d971c05a5b66ea20, type: 3}
 --- !u!1001 &897525434
 PrefabInstance:
   m_ObjectHideFlags: 0

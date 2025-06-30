@@ -12,8 +12,8 @@ public class RayCastManager_R : MonoBehaviour
     Ray ray;
     RaycastHit hit;
     public UnityEvent<string> AA;
+    public UnityEvent<RaycastHit,bool> BB;
     string AA_string;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -38,17 +38,17 @@ public class RayCastManager_R : MonoBehaviour
             {
                 myLR.SetPosition(1, hit.point);
                 AA.Invoke(hit.collider.gameObject.name);
-                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
                 {
-                    Button Button_Component = hit.collider.gameObject.GetComponent<Button>();
-                    Button_Component.onClick.Invoke();
+                    Debug.Log("¥≠∑»¿Ω");
+                    BB.Invoke(hit,true);
                 }
             }
         }
         else
         {
             AA.Invoke(null);
-            myLR.SetPosition(1,ray.origin+ray.direction * 10);
+            myLR.SetPosition(1, ray.origin + ray.direction * 10);
         }
     }
-}
+        }
