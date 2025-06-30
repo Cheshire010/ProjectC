@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class SetOptionManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    public void ExitScene()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
     public void SetTitle()
     {
         SceneManager.LoadScene("SetCarScene");
