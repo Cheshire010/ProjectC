@@ -32,7 +32,7 @@ public class RayCastManager_R : MonoBehaviour
         myLR.SetPosition(0, ray.origin);
         myLR.SetPosition(1, ray.origin + ray.direction * 50);
 
-        if(Physics.Raycast(ray, out hit,Mathf.Infinity))
+        if(Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
             if(hit.collider)
             {
