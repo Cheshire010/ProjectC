@@ -17,7 +17,7 @@ public class OtherCarMove : MonoBehaviour
 
         if (transform.position.z > 100.0f)
         {
-            transform.position = new Vector3(8.0f, 0, -20.0f);
+            transform.position = new Vector3(2.0f, 0, -30.0f);
         }
     }
     private void OnTriggerEnter(Collider other)

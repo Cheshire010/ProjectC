@@ -17,7 +17,7 @@ public class OtherLineCarMove : MonoBehaviour
 
         if (transform.position.z < -70.0f)
         {
-            transform.position = new Vector3(2.5f, 0, 70.0f);
+            transform.position = new Vector3(-5.5f, 0, 70.0f);
         }
     }
 }

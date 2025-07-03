@@ -10,6 +10,10 @@ public class SetOptionManager : MonoBehaviour
     {
         SceneManager.LoadScene("TitleScene");
     }
+    public void TutoScene()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
     public void SetTitle()
     {
         SceneManager.LoadScene("SetCarScene");

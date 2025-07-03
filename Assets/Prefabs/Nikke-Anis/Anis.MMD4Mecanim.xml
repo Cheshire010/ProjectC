@@ -140,9 +140,9 @@
     <vertexScaleByHeightFlag>false</vertexScaleByHeightFlag>
     <vertexScaleByHeight>158</vertexScaleByHeight>
     <waitProcessExitting>false</waitProcessExitting>
-    <pmxAssetPath>Assets/Prefabs/Nikke-Anis/Anis.pmx</pmxAssetPath>
+    <pmxAssetPath>Assets/Scripts/TutorialScript/Nikke-Anis/Anis.pmx</pmxAssetPath>
     <vmdAssetPathList />
-    <fbxOutputPath>Assets/Prefabs/Nikke-Anis/Anis.fbx</fbxOutputPath>
+    <fbxOutputPath>Assets/Scripts/TutorialScript/Nikke-Anis/Anis.fbx</fbxOutputPath>
     <bulletPhysicsVersion>_275</bulletPhysicsVersion>
     <useWineFlag>false</useWineFlag>
     <wine>Manual</wine>

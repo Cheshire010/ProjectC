@@ -16,8 +16,8 @@ public class TextManager : MonoBehaviour
     {
         TextCanvas = GameObject.Find("TextCanvas");
         npc = GameObject.Find("NPC");
-        TextCanvas.transform.position = npc.transform.position - npc.transform.right * 2.0f;
-        TextCanvas.transform.eulerAngles = npc.transform.eulerAngles;
+        TextCanvas.transform.position = npc.transform.position - npc.transform.forward * -1.0f;
+        TextCanvas.transform.eulerAngles = npc.transform.eulerAngles * 180.0f;
         TextCanvas.transform.parent = npc.transform;
         TextCanvas.SetActive(false);
         ShowLine();

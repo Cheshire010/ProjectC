@@ -11,8 +11,8 @@ public class UIManager : MonoBehaviour
     {
         UICanvas = GameObject.Find("UICanvas");
         npc = GameObject.Find("NPC");
-        UICanvas.transform.position = npc.transform.position + npc.transform.right * 3.0f;
-        UICanvas.transform.eulerAngles = npc.transform.eulerAngles;
+        UICanvas.transform.position = npc.transform.position + npc.transform.right * -1.0f;
+        UICanvas.transform.eulerAngles = npc.transform.eulerAngles * 180.0f;
         UICanvas.transform.parent = npc.transform;
         UICanvas.SetActive(false);
     }
