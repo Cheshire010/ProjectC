@@ -10,6 +10,7 @@ public class TextManager_TestScene : MonoBehaviour
     public Text dialogueText;
     int currentline = 0;
     public Image Textimage;
+    public Text NPCName;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +32,13 @@ public class TextManager_TestScene : MonoBehaviour
         {
             dialogueText.text = NPCText[currentline];
             Textimage.enabled = true;
+            NPCName.enabled = true;
         }
         else
         {
             dialogueText.gameObject.SetActive(false);
             Textimage.enabled = false;
+            NPCName.enabled=false;
         }
     }
     void ShowNextLine_Test()

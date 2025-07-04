@@ -24,12 +24,12 @@ public class Button_Raycast_changeColor : MonoBehaviour
         if (_value == gameObject.name)
         {
             myImage.color = Color.red;
-            GetComponent<UnityEngine.UI.Outline>().enabled = true;
+            //GetComponent<UnityEngine.UI.Outline>().enabled = true;
         }
         else
         {
             myImage.color = Color.white;
-            GetComponent<UnityEngine.UI.Outline>().enabled = false;
+            //GetComponent<UnityEngine.UI.Outline>().enabled = false;
         }
     }
     public void OnClickMethod(RaycastHit _hit, bool _isTrigger)
