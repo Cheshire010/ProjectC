@@ -1127,7 +1127,6 @@ GameObject:
   - component: {fileID: 195767899}
   - component: {fileID: 195767902}
   - component: {fileID: 195767903}
-  - component: {fileID: 195767904}
   m_Layer: 5
   m_Name: Button1
   m_TagString: Button
@@ -1281,21 +1280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e082482177ec04f9828cd74780626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &195767904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 195767897}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.13664317, g: 1, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
-  m_UseGraphicAlpha: 1
 --- !u!1 &198099648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 394570496377459533, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
@@ -12187,7 +12171,6 @@ GameObject:
   - component: {fileID: 1756923651}
   - component: {fileID: 1756923650}
   - component: {fileID: 1756923649}
-  - component: {fileID: 1756923648}
   - component: {fileID: 1756923653}
   m_Layer: 5
   m_Name: Exit
@@ -12216,21 +12199,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1756923648
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756923646}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.13664317, g: 1, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
-  m_UseGraphicAlpha: 1
 --- !u!114 &1756923649
 MonoBehaviour:
   m_ObjectHideFlags: 0

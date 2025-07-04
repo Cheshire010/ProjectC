@@ -380,7 +380,6 @@ GameObject:
   - component: {fileID: 354951579}
   - component: {fileID: 354951582}
   - component: {fileID: 354951583}
-  - component: {fileID: 354951584}
   m_Layer: 5
   m_Name: WTF
   m_TagString: Button
@@ -523,21 +522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e082482177ec04f9828cd74780626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &354951584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354951577}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.13664317, g: 1, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
-  m_UseGraphicAlpha: 1
 --- !u!1 &507121832
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,7 +1265,6 @@ GameObject:
   - component: {fileID: 1026181114}
   - component: {fileID: 1026181117}
   - component: {fileID: 1026181118}
-  - component: {fileID: 1026181119}
   m_Layer: 5
   m_Name: TutoButton
   m_TagString: Button
@@ -1436,21 +1419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e082482177ec04f9828cd74780626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1026181119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026181112}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.13664317, g: 1, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
-  m_UseGraphicAlpha: 1
 --- !u!1 &1054642167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1810,6 @@ GameObject:
   - component: {fileID: 1938683180}
   - component: {fileID: 1938683183}
   - component: {fileID: 1938683184}
-  - component: {fileID: 1938683185}
   m_Layer: 5
   m_Name: LobbyButton
   m_TagString: Button
@@ -1997,21 +1964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e082482177ec04f9828cd74780626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1938683185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1938683178}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.13664317, g: 1, b: 0, a: 1}
-  m_EffectDistance: {x: 5, y: 5}
-  m_UseGraphicAlpha: 1
 --- !u!1 &1985712314
 GameObject:
   m_ObjectHideFlags: 0
