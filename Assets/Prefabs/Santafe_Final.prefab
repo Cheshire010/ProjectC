@@ -1062,7 +1062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4284876551157252908
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1635,7 +1635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3125887342685661337
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1803,6 +1803,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3c99785ca9565624f94ccd2919bc255b, type: 3}
       propertyPath: m_Name
       value: Santafe_Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3c99785ca9565624f94ccd2919bc255b, type: 3}
+      propertyPath: m_TagString
+      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 5941119898760136965, guid: 3c99785ca9565624f94ccd2919bc255b, type: 3}
       propertyPath: m_LocalPosition.x

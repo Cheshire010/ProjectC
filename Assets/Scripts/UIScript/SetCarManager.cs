@@ -10,4 +10,9 @@ public class SetCarManager : MonoBehaviour
         Car_Static.LoadCarValue = 0;
         carSpawn.SpawnCar();
     }
+    public void SetCar_Rambo()
+    {
+        Car_Static.LoadCarValue = 1;
+        carSpawn.SpawnCar();
+    }
 }

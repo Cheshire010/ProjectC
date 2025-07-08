@@ -7,7 +7,7 @@ public class Load_Car_Final : MonoBehaviour
     public GameObject Spawnlocation;
     public GameObject[] Cars;
     // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
         GameObject go = Instantiate(Cars[Car_Static.LoadCarValue], Spawnlocation.transform.position, Quaternion.identity);
     }
