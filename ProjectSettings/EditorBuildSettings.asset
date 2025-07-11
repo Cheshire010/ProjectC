@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: d02c0922a1dc9494495dfb84ab71971f
+  - enabled: 1
+    path: Assets/Scenes/OptionParking.unity
+    guid: bacb40104f269f54e81b4aa82dc336cd
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c2f3fb885fb82044e8ae71ee521e8900, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ff4ffd2d13bb4c74180109c78222a74d, type: 2}

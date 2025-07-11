@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Button
   - Car
+  - ScrollView
   layers:
   - Default
   - TransparentFX

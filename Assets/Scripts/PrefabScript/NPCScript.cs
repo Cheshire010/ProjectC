@@ -18,37 +18,27 @@ public class NPCScript : MonoBehaviour
         myRigid = GetComponent<Rigidbody>();
         myCap = GetComponent<CapsuleCollider>();
         RayCastManager_R =  GameObject.Find("RayCastManager_R").GetComponent<RayCastManager_R>();
-        RayCastManager_R.BB.AddListener(ShowUI);
+        //RayCastManager_R.BB.AddListener(ShowUI);
         RayCastManager_R.BB.AddListener(ShowUI2);
     }
     void Update()
     {
-        //if(OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
-        //{
-        //    if(UICanvas != null)
-        //    {
-        //        UICanvas.SetActive(true);
-        //    }
-        //    if(TextCanvas != null)
-        //    {
-        //        TextCanvas.SetActive(true);
-        //    }
-        //}
+        
     }
 
-    public void ShowUI(RaycastHit _hit, bool _isTrigger)
-    {
-        Debug.Log("받았음");
-        if (_hit.collider.gameObject.name != this.gameObject.name)
-            return;
+    //public void ShowUI(RaycastHit _hit, bool _isTrigger)
+    //{
+    //    Debug.Log("받았음");
+    //    if (_hit.collider.gameObject.name != this.gameObject.name)
+    //        return;
 
 
-        GameObject GG = transform.Find("UICanvas").gameObject;
-        if (GG.activeSelf == true)
-            GG.SetActive(false);
-        else
-            GG.SetActive(true);
-    }
+    //    GameObject GG = transform.Find("UICanvas").gameObject;
+    //    if (GG.activeSelf == true)
+    //        GG.SetActive(false);
+    //    else
+    //        GG.SetActive(true);
+    //}
     public void ShowUI2(RaycastHit _hit, bool _isTrigger)
     {
         if(_hit.collider.gameObject.name != this.gameObject.name)

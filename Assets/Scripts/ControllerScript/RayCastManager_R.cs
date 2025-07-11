@@ -13,6 +13,7 @@ public class RayCastManager_R : MonoBehaviour
     RaycastHit hit;
     public UnityEvent<string> AA;
     public UnityEvent<RaycastHit,bool> BB;
+    public UnityEvent<RaycastHit, bool> CC;
     string AA_string;
     // Start is called before the first frame update
     void Start()
@@ -37,12 +38,23 @@ public class RayCastManager_R : MonoBehaviour
             if(hit.collider)
             {
                 myLR.SetPosition(1, hit.point);
+
+                Debug.Log(hit.collider.gameObject.name);
+                Debug.Log(hit.collider.gameObject.tag);
+
                 AA.Invoke(hit.collider.gameObject.name);
-                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.LTouch))
+
+                if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
                 {
                     Debug.Log("´­·ÈÀ½");
                     BB.Invoke(hit,true);
                 }
+
+                Vector2 thumstick = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.RTouch);
+                if (thumstick.y > 0.2f)
+                    CC.Invoke(hit, true);
+                else if (thumstick.y < -0.2f)
+                    CC.Invoke(hit, false);
             }
         }
         else
