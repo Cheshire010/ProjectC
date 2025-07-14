@@ -22,8 +22,16 @@ public class SetOptionManager : MonoBehaviour
     {
         SceneManager.LoadScene("TestScene");
     }
-    public void SetOtion_1()
+    public void SetOption_1()
     {
         SceneManager.LoadScene("OptionParking");
+    }
+    public void SetOption_2()
+    {
+        SceneManager.LoadScene("TestScene 1");
+    }
+    public void SetOption_3()
+    {
+        SceneManager.LoadScene("head_up_display");
     }
 }

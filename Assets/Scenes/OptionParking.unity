@@ -2731,7 +2731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2876,34 +2876,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
   m_PrefabInstance: {fileID: 2058567246}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &496963903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496963902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc5b33a74d6bcf845aeb96f122202a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  chatCanvas: {fileID: 1031293737}
-  chatText: {fileID: 2113645986}
-  textArray:
-  - "\uD30C\uD0B9 \uC5B4\uC2DC\uC2A4\uD2B8 \uD50C\uB7EC\uC2A4 II\uB294 \uC678\uBD80\uC5D0\uC11C
-    \uCC28\uB97C \uC870\uC885\uD558\uB294 \uC2DC\uC2A4\uD15C\uC785\uB2C8\uB2E4"
-  - "\uACF5\uAC04\uC774 \uBD80\uC871\uD558\uAC70\uB098 \uD611\uC18C\uD558\uC5EC \uCC28\uC5D0
-    \uC9C4\uC785\uD558\uC9C0 \uBABB\uD560 \uB54C \uC8FC\uB85C \uC0AC\uC6A9\uD558\uB294
-    \uC2DC\uC2A4\uD15C\uC785\uB2C8\uB2E4."
-  - "\uC67C\uCABD \uC190\uC758 \uD0A4\uB97C \uC624\uB978\uC190\uC744 \uC774\uC6A9\uD574
-    \uC6C0\uC9C1\uC5EC \uBCF4\uC138\uC694."
-  audioClips:
-  - {fileID: 8300000, guid: db45bf4cce441af41ae79bf2c28ae4a7, type: 3}
-  - {fileID: 8300000, guid: d6f50fb801d01544db54e0f1be034c1d, type: 3}
-  - {fileID: 8300000, guid: 637736440c2804245a0b3333af8243d4, type: 3}
-  audioSource: {fileID: 496963904}
-  playerCamera: {fileID: 0}
 --- !u!82 &496963904
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5094,6 +5066,34 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
   m_PrefabInstance: {fileID: 2058567246}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &496963909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496963902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f9e50f78c1beea4f9f2416d8ad99edb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatCanvas: {fileID: 1031293737}
+  chatText: {fileID: 2113645986}
+  textArray:
+  - "\uD30C\uD0B9 \uC5B4\uC2DC\uC2A4\uD2B8 \uD50C\uB7EC\uC2A42\uB294 \uC678\uBD80\uC5D0\uC11C
+    \uCC28\uB97C \uC870\uC885\uD558\uB294 \uC2DC\uC2A4\uD15C\uC785\uB2C8\uB2E4"
+  - "\uACF5\uAC04\uC774 \uBD80\uC871\uD558\uAC70\uB098 \uD611\uC18C\uD558\uC5EC \uCC28\uC5D0
+    \uC9C4\uC785\uD558\uC9C0 \uBABB\uD560 \uB54C \uC8FC\uB85C \uC0AC\uC6A9\uD558\uB294
+    \uC2DC\uC2A4\uD15C\uC785\uB2C8\uB2E4"
+  - "\uC67C\uCABD \uC190\uC758 \uD0A4\uB97C \uC624\uB978\uC190\uC744 \uC774\uC6A9\uD574
+    \uC6C0\uC9C1\uC5EC \uBCF4\uC138\uC694"
+  audioClips:
+  - {fileID: 8300000, guid: db45bf4cce441af41ae79bf2c28ae4a7, type: 3}
+  - {fileID: 8300000, guid: d6f50fb801d01544db54e0f1be034c1d, type: 3}
+  - {fileID: 8300000, guid: 637736440c2804245a0b3333af8243d4, type: 3}
+  audioSource: {fileID: 496963904}
+  playerCamera: {fileID: 1519528666}
 --- !u!1 &506958240 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4584181836478247076, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
@@ -10721,6 +10721,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 26dd00546e67fab4abc84ac5340f35af, type: 3}
   m_PrefabInstance: {fileID: 1517030700}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1519528666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+  m_PrefabInstance: {fileID: 484228337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1526391235 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7952785404912406274, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
@@ -13702,7 +13707,7 @@ PrefabInstance:
       addedObject: {fileID: 496963904}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 496963903}
+      addedObject: {fileID: 496963909}
     - targetCorrespondingSourceObject: {fileID: 7864116967887840643, guid: cdd65a0eb6c03714aa7cef18e7673352, type: 3}
       insertIndex: -1
       addedObject: {fileID: 226747913}

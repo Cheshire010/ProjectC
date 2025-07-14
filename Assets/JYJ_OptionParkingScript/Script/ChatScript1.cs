@@ -13,6 +13,9 @@ public class ChatScript : MonoBehaviour
 
     RayCastManager_R RayCastManager_R;
     public Transform playerCamera;
+
+    private bool isChatActive = false;
+
     void Start()
     {
         chatCanvas.gameObject.SetActive(false);
@@ -22,15 +25,17 @@ public class ChatScript : MonoBehaviour
 
     void ADD(string _value)
     {
-        if (_value == gameObject.name)
+        if (_value == gameObject.name && !isChatActive)
         {
             if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTouch))
             {
+                isChatActive = true; // 대화 중임을 표시
                 chatCanvas.gameObject.SetActive(true);
-                ShowCurrentTextAndAudio(); // 대사와 오디오 출력
+                ShowCurrentTextAndAudio();
             }
         }
     }
+
 
     void Update()
     {
@@ -67,6 +72,8 @@ public class ChatScript : MonoBehaviour
         {
             chatCanvas.gameObject.SetActive(false);
             currentIndex = 0;
+            isChatActive = false; // 대화 종료, 상호작용 가능 상태로 복귀
         }
     }
+
 }
