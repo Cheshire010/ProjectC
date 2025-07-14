@@ -25,20 +25,6 @@ public class NPCScript : MonoBehaviour
     {
         
     }
-
-    //public void ShowUI(RaycastHit _hit, bool _isTrigger)
-    //{
-    //    Debug.Log("πﬁæ“¿Ω");
-    //    if (_hit.collider.gameObject.name != this.gameObject.name)
-    //        return;
-
-
-    //    GameObject GG = transform.Find("UICanvas").gameObject;
-    //    if (GG.activeSelf == true)
-    //        GG.SetActive(false);
-    //    else
-    //        GG.SetActive(true);
-    //}
     public void ShowUI2(RaycastHit _hit, bool _isTrigger)
     {
         if(_hit.collider.gameObject.name != this.gameObject.name)

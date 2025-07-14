@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/kdc_head_up_display/scence/head_up_display.unity
     guid: e58381f583915cb4f82ec9422608d1c7
+  - enabled: 1
+    path: Assets/Scenes/Credit Scene.unity
+    guid: 3934210c9748b5e4c9558098029af925
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c2f3fb885fb82044e8ae71ee521e8900, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ff4ffd2d13bb4c74180109c78222a74d, type: 2}

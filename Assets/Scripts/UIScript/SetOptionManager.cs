@@ -18,6 +18,10 @@ public class SetOptionManager : MonoBehaviour
     {
         SceneManager.LoadScene("SetCarScene");
     }
+    public void Credit()
+    {
+        SceneManager.LoadScene("Credit Scene");
+    }
     public void SetOption()
     {
         SceneManager.LoadScene("TestScene");
