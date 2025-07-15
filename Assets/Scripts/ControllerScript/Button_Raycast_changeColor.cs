@@ -9,7 +9,8 @@ public class Button_Raycast_changeColor : MonoBehaviour
     RayCastManager_R RaycastManager_R;
     Image myImage;
     GameObject Rhand;
-
+    Coroutine Vibe;
+    bool isVibe = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,12 +25,15 @@ public class Button_Raycast_changeColor : MonoBehaviour
         if (_value == gameObject.name)
         {
             myImage.color = Color.red;
-            //GetComponent<UnityEngine.UI.Outline>().enabled = true;
+
+            if(Vibe == null && isVibe == false)
+                Vibe = StartCoroutine(VibrationRight(0.01f));
         }
         else
         {
             myImage.color = Color.white;
-            //GetComponent<UnityEngine.UI.Outline>().enabled = false;
+            isVibe = false;
+            Vibe = null;
         }
     }
     public void OnClickMethod(RaycastHit _hit, bool _isTrigger)
@@ -38,5 +42,14 @@ public class Button_Raycast_changeColor : MonoBehaviour
             return;
 
         GetComponent<Button>().onClick.Invoke();
+    }
+
+    IEnumerator VibrationRight(float _time)
+    {
+        OVRInput.SetControllerVibration(1, 0.01f, OVRInput.Controller.RTouch);
+        yield return new WaitForSeconds(_time);
+        OVRInput.SetControllerVibration(0, 0, OVRInput.Controller.RTouch);
+        Vibe = null;
+        isVibe = true;
     }
 }
