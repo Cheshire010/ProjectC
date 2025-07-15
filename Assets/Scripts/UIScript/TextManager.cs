@@ -18,6 +18,7 @@ public class TextManager : MonoBehaviour
 
     AudioSource NPC_Audio;
     bool isAudioPlaying = false;
+    bool hasStarted = false;
 
     int currentline = 0;
 
@@ -32,16 +33,25 @@ public class TextManager : MonoBehaviour
         TextCanvas.transform.eulerAngles = npc.transform.eulerAngles * 180.0f;
         TextCanvas.transform.parent = npc.transform;
         TextCanvas.SetActive(false);
-
-        ShowLine();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!TextCanvas.activeSelf)
+            return;
+
         if(OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RTouch))
         {
-            ShowNextLine();
+            if (!hasStarted)
+            {
+                hasStarted = true;
+                ShowLine();
+            }
+            else if (!isAudioPlaying)
+            {
+                ShowNextLine();
+            }
         }
     }
     void ShowLine()
@@ -51,6 +61,9 @@ public class TextManager : MonoBehaviour
             dialogueText.text = NPCText[currentline];
             Textimage.enabled = true;
             NPCName.enabled = true;
+
+            if (!TextCanvas.activeSelf)
+                TextCanvas.SetActive(true);
 
             if (voiceClips.Length > currentline && voiceClips[currentline] != null)
             {

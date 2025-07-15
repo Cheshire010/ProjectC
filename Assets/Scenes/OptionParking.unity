@@ -5087,7 +5087,11 @@ MonoBehaviour:
   - "\uC67C\uCABD \uC190\uC758 \uCC28\uD0A4\uB97C \uD655\uC778\uD574\uC8FC\uC138\uC694"
   - "\uCC28 \uD0A4 \uC624\uB978\uCABD\uC5D0 \uC788\uB294 \uBC84\uD2BC\uC744 \uD1B5\uD574
     \uCC28\uB7C9\uC744 \uC870\uC791\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4"
-  audioClips: []
+  audioClips:
+  - {fileID: 8300000, guid: 2ad4408858bdbf04cbef2ec1aec4ab8c, type: 3}
+  - {fileID: 8300000, guid: d94985870e6ef524ea1cc6f249a3aa22, type: 3}
+  - {fileID: 8300000, guid: baa1dd8f02f29c84f872c1522c31d654, type: 3}
+  - {fileID: 8300000, guid: 606cbb81cb8b2524fa521b66af84c84d, type: 3}
   audioSource: {fileID: 496963904}
   playerCamera: {fileID: 1519528666}
 --- !u!1 &506958240 stripped

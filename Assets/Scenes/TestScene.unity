@@ -10191,6 +10191,10 @@ MonoBehaviour:
   - "\uC67C\uCABD\uC5D0 \uC788\uB294 \uBC31\uBBF8\uB7EC\uB97C \uD655\uC778\uD574\uC8FC\uC138\uC694"
   - "\uCC28\uB7C9\uC774 \uD6C4\uCE21\uBC29\uC5D0 \uC788\uB2E4\uBA74 \uBC31\uBBF8\uB7EC\uC758
     \uCC28\uB7C9 \uC544\uC774\uCF58\uC774 \uBE68\uAC1B\uAC8C \uBCC0\uD569\uB2C8\uB2E4"
+  voiceClips:
+  - {fileID: 8300000, guid: 5731ecfee04e9914994b212c6ad21e3c, type: 3}
+  - {fileID: 8300000, guid: 8fe768086e4f99242963e832370461be, type: 3}
+  - {fileID: 8300000, guid: 407ad8f71a602f14f98742c9bc8e6b94, type: 3}
   dialogueText: {fileID: 1387500631}
   Textimage: {fileID: 1625597279}
   NPCName: {fileID: 2034878804}
