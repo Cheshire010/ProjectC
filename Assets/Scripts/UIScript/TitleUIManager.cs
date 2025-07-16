@@ -11,7 +11,7 @@ public class TitleUIManager : MonoBehaviour
     {
         TitleCanvas = GameObject.Find("TitleCanvas");
         Camera = GameObject.Find("OVRCameraRig");
-        TitleCanvas.transform.position = Camera.transform.position + Camera.transform.forward * 10.0f;
+        TitleCanvas.transform.position = Camera.transform.position + (new Vector3 (0, 2, 10));
         TitleCanvas.transform.eulerAngles = Camera.transform.eulerAngles;
         TitleCanvas.transform.parent = Camera.transform;
     }

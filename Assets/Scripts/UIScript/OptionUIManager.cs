@@ -6,6 +6,7 @@ public class OptionUIManager : MonoBehaviour
 {
     RayCastManager_R RayCastManager_R;
     public GameObject OptionUI;
+    public MeshRenderer OptionMat;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +25,7 @@ public class OptionUIManager : MonoBehaviour
         if (_hit.collider.gameObject.name != this.gameObject.name) return;
         Debug.Log("dd");
         OptionUI.SetActive(true);
+        
     }
     // Update is called once per frame
     void Update()

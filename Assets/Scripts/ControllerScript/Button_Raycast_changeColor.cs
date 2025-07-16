@@ -8,6 +8,7 @@ public class Button_Raycast_changeColor : MonoBehaviour
 {
     RayCastManager_R RaycastManager_R;
     Image myImage;
+    Text myText;
     GameObject Rhand;
     Coroutine Vibe;
     bool isVibe = false;
@@ -16,6 +17,7 @@ public class Button_Raycast_changeColor : MonoBehaviour
     {
         RaycastManager_R = GameObject.Find("RayCastManager_R").GetComponent<RayCastManager_R>();
         myImage = GetComponent<Image>();
+        myText = GetComponentInChildren<Text>();
         RaycastManager_R.AA.AddListener(change_Color);
         RaycastManager_R.BB.AddListener(OnClickMethod);
     }
@@ -24,14 +26,14 @@ public class Button_Raycast_changeColor : MonoBehaviour
     {
         if (_value == gameObject.name)
         {
-            myImage.color = Color.red;
+            myText.color = Color.red;
 
             if(Vibe == null && isVibe == false)
                 Vibe = StartCoroutine(VibrationRight(0.01f));
         }
         else
         {
-            myImage.color = Color.white;
+            myText.color = Color.white;
             isVibe = false;
             Vibe = null;
         }
