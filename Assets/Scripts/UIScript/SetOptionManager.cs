@@ -38,4 +38,14 @@ public class SetOptionManager : MonoBehaviour
     {
         SceneManager.LoadScene("head_up_display");
     }
+
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // 실제 빌드된 게임에서는 종료
+        Application.Quit();
+#endif
+    }
 }

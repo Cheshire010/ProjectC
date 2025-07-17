@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
-public class CreditTextScript : MonoBehaviour
+public class CreditExitScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,11 +14,9 @@ public class CreditTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0,1,0)* 1.0f*Time.deltaTime);
-
-        if (transform.position.y > 50.0f)
+        if (transform.position.y < 1)
         {
-            Destroy(gameObject);
-        }
+            transform.Translate(new Vector3(0, 1, 0) * 1.0f * Time.deltaTime);
+        } 
     }
 }
