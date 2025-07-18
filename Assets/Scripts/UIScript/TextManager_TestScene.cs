@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TextManager_TestScene : MonoBehaviour
 {
     GameObject TextCanvas;
-    GameObject NPC;
+    GameObject npc;
 
     public string[] NPCText;
     public AudioClip[] voiceClips;
@@ -16,65 +16,58 @@ public class TextManager_TestScene : MonoBehaviour
     public Text NPCName;
 
     AudioSource NPC_Audio;
-    bool isAudioPlaying = false;
 
     int currentline = 0;
-    // Start is called before the first frame update
+
     void Start()
     {
         TextCanvas = GameObject.Find("TextCanvas");
-        NPC = GameObject.Find("NPC");
-        NPC_Audio = GameObject.Find("NPC").GetComponent<AudioSource>();
+        npc = GameObject.Find("NPC");
+        NPC_Audio = npc.GetComponent<AudioSource>();
 
-        ShowLine_Test();
+        StartDialogue(); // 자동 시작
     }
 
-    // Update is called once per frame
-    void Update()
+    void StartDialogue()
     {
-        if (OVRInput.GetDown(OVRInput.Button.One, OVRInput.Controller.RTouch))
-        {
-            ShowNextLine_Test();
-        }
+        currentline = 0;
+        dialogueText.gameObject.SetActive(true);
+        Textimage.enabled = true;
+        NPCName.enabled = true;
+        TextCanvas.SetActive(true);
+        StartCoroutine(PlayDialogueSequence());
     }
-    void ShowLine_Test()
+
+    IEnumerator PlayDialogueSequence()
     {
-        if (currentline < NPCText.Length)
+        while (currentline < NPCText.Length)
         {
             dialogueText.text = NPCText[currentline];
-            Textimage.enabled = true;
-            NPCName.enabled = true;
 
             if (voiceClips.Length > currentline && voiceClips[currentline] != null)
             {
                 NPC_Audio.Stop();
                 NPC_Audio.clip = voiceClips[currentline];
                 NPC_Audio.Play();
-                isAudioPlaying = true;
-                Invoke(nameof(AllowNextLine), voiceClips[currentline].length);
+                yield return new WaitForSeconds(voiceClips[currentline].length + 0.2f); // 약간의 딜레이 추가
             }
             else
             {
-                isAudioPlaying = false;
+                yield return new WaitForSeconds(2.0f); // 음성이 없으면 기본 대기
             }
-        }
-        else
-        {
-            dialogueText.gameObject.SetActive(false);
-            Textimage.enabled = false;
-            NPCName.enabled=false;
 
-            NPC_Audio.Stop();
+            currentline++;
         }
-    }
-    void ShowNextLine_Test()
-    {
-        currentline++;
-        ShowLine_Test();
+
+        EndDialogue();
     }
 
-    void AllowNextLine()
+    void EndDialogue()
     {
-        isAudioPlaying = false;
+        dialogueText.gameObject.SetActive(false);
+        Textimage.enabled = false;
+        NPCName.enabled = false;
+        NPC_Audio.Stop();
+        TextCanvas.SetActive(false);
     }
 }

@@ -19,10 +19,10 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         Vector2 input = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.LTouch);
-        myVec = new Vector3(0, 0, input.y);
+        myVec = new Vector3(input.x, 0, input.y);
         transform.Translate(myVec * speed * Time.deltaTime);
 
-        Vector2 turninput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.LTouch);
+        Vector2 turninput = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick, OVRInput.Controller.RTouch);
         
         if(!hasTurned)
         {
