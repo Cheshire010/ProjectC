@@ -14,7 +14,7 @@ public class CreditTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(0,1,0)* 1.0f*Time.deltaTime);
+        transform.Translate(new Vector3(0,2,0)* 1.0f*Time.deltaTime);
 
         if (transform.position.y > 50.0f)
         {
