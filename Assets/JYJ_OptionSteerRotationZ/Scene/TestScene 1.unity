@@ -3668,16 +3668,16 @@ MonoBehaviour:
   NPCText:
   - "\uC774 \uC635\uC158\uC740 \uCC28\uC120 \uC774\uD0C8 \uACBD\uBCF4 \uC2DC\uC2A4\uD15C\uC785\uB2C8\uB2E4"
   - "\uAE5C\uBE61\uC774\uB97C \uD0A4\uC9C0 \uC54A\uACE0 \uCC28\uC120\uC744 \uB118\uC5B4\uAC08
-    \uC2DC \uACBD\uACE0\uC74C\uC774 \uB098\uC635\uB2C8\uB2E4"
+    \uC2DC \uACBD\uACE0\uC74C\uACFC \uC9C4\uB3D9\uC774 \uB098\uC635\uB2C8\uB2E4"
   - "\uC88C\uD68C\uC804 \uC2E0\uD638\uB294 X\uD0A4 \uC6B0\uD68C\uC804 \uC2E0\uD638\uB294
     A\uD0A4\uB85C \uB123\uC744 \uC218 \uC788\uC2B5\uB2C8\uB2E4"
   - "\uCC28\uB7C9 \uC88C\uC6B0 \uC774\uB3D9\uC740 \uC67C\uCABD \uC870\uC774\uC2A4\uD2F1\uC73C\uB85C
     \uAC00\uB2A5\uD569\uB2C8\uB2E4"
   voiceClips:
-  - {fileID: 8300000, guid: e3e3afd63aa97c844ae06bd51c931237, type: 3}
-  - {fileID: 8300000, guid: 142a98aeb240e6a4cb3b50b7f4a6daa9, type: 3}
-  - {fileID: 8300000, guid: f494ae31bb537514da6cc8cb79682bd1, type: 3}
-  - {fileID: 8300000, guid: d3f2a1611e31b8d4e98086f2325113d7, type: 3}
+  - {fileID: 8300000, guid: fd51be9037274d849b155ca50420eacd, type: 3}
+  - {fileID: 8300000, guid: 7b55f266553e67d41ab48c14fe2ad5eb, type: 3}
+  - {fileID: 8300000, guid: 7f01c507699f37a44b39147ab0b58aa0, type: 3}
+  - {fileID: 8300000, guid: b7888a53c38a44443be13e105fdd7c1e, type: 3}
   dialogueText: {fileID: 1387500631}
   Textimage: {fileID: 1625597279}
   NPCName: {fileID: 2034878804}
