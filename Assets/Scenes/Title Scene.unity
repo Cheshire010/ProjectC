@@ -456,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ab4575800301b0a4e92a42914c0a8a4c, type: 3}
       propertyPath: m_Name
-      value: lamborghini-aventador
+      value: Car2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1923,7 +1923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a42d43a194fd81740a5375f72b0296f6, type: 3}
       propertyPath: m_Name
-      value: FINAL_MODEL
+      value: Car3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2063,7 +2063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3c99785ca9565624f94ccd2919bc255b, type: 3}
       propertyPath: m_Name
-      value: zxczxczxczxc6
+      value: Car1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2651,9 +2651,9 @@ SceneRoots:
   - {fileID: 2085258975}
   - {fileID: 507121835}
   - {fileID: 1327131007}
+  - {fileID: 82629886}
   - {fileID: 864621365}
   - {fileID: 301577413}
   - {fileID: 1393306364}
   - {fileID: 101952343}
   - {fileID: 1258252606}
-  - {fileID: 82629886}
